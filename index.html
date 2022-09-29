@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuhsing Private</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body id="index">
+    
+    <audio autoplay loop id="audioelement" src="audio/001.mp3"></audio>
+    <img src="img/index_pic.png" class="pic">
+    <img src="img/index_text.png" class="text">
+    <ul class="menu">
+        <li><a href="Web/campus.html" class="hover"><img src="img/btn_campus.png"></a></li>
+        <li><a href="Web/photos_html/01.html" class="hover"><img src="img/btn_photos.png"></a></li>
+        <li><a href="Web/book.html" class="hover"><img src="img/btn_book.png"></a></li>
+        <li><a href="Web/video01.html" class="hover"><img src="img/btn_video.png"></a></li>
+    </ul>
+    <script type="text/javascript">
+        window.onload = function () {
+            setInterval("toggleSound()", 1);
+        }
+        function toggleSound() {
+            var music = document.getElementById("audioelement");//獲取ID  
+            if (music.paused) { //判讀是否播放  
+                music.paused = false;
+                music.play(); //沒有就播放 
+            }
+        }
+    </script>
+    <!-- <script src="main.js"></script> -->
+</body>
+
+</html>
