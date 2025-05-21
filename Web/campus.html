@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuhsing Private</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="campus">
+    <audio autoplay loop id="audioelement" src="../audio/002.mp3"></audio>
+    <img src="../img/text.png" class="text">
+    <img src="../img/campus_pic.png" class="pic">
+    <img src="../img/campus_border.png" class="border-line">
+    <ul class="menu">
+        <li><a href="campus.html" class="hover active"><img src="../img/campus-active.png"></a></li>
+        <li>
+            <a href="photos_html/08.html" class="hover"> <img src="../img/btn_photos.png"> </a>
+        </li>
+        <li><a href="book.html" class="hover"><img src="../img/btn_book.png"></a></li>
+        <li>
+            <a href="video01.html" class="hover"><img src="../img/btn_video.png"></a>
+        </li>
+    </ul>
+    <div class="swiper-size">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../campus/campus01.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus02.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus03.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus04.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus05.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus06.JPG">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus07.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus08.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus09.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus10.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus11.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus12.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus13.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus14.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus15.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus16.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus17.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus18.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus19.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus20.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus21.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus22.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../campus/campus23.jpg">
+                </div>
+            </div>
+            <div class="swiper-button-next"><img class="hover" src="../img/campus_btn-next.png"></div>
+            <div class="swiper-button-prev"><img class="hover" src="../img/campus_btn-prev.png"></div>
+        </div>
+    </div>
+
+    <script src="../js/swiper-bundle.js"></script>
+    <script>
+        window.onload = function () {
+            setInterval("toggleSound()", 1);
+        }
+        function toggleSound() {
+            var music = document.getElementById("audioelement");//獲取ID  
+            if (music.paused) { //判讀是否播放  
+                music.paused = false;
+                music.play(); //沒有就播放 
+            }
+        }
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // slidesPerGroup: 1,
+            effect: "fade",
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+    <script src="../main.js"></script>
+
+</body>
+
+</html>
